@@ -1,0 +1,16 @@
+{
+  "name": "quickbite",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build && rm -rf dist && cp -r frontend/dist dist",
+    "preview": "npm --prefix frontend run preview",
+    "start": "npm --prefix backend start",
+    "seed": "npm --prefix backend run seed",
+    "test": "npm --prefix backend test"
+  }
+}
